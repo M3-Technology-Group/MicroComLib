@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Language + emit. tsup does the emitting; tsc is typecheck-only. */
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "moduleDetection": "force",
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+
+    /* No ambient @types are pulled in. This library targets a CH5 panel
+       browser, so Node globals must never typecheck clean inside src/. */
+    "types": [],
+
+    /* Strictness. */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.ts", "*.config.ts"]
+}
