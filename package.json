@@ -1,6 +1,6 @@
 {
   "name": "microcomlib",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A minimalistic, dependency-free implementation of the Crestron CH5 CrComLib bridge for modern web apps.",
   "keywords": [
     "crestron",
@@ -9,7 +9,7 @@
     "svelte",
     "typescript"
   ],
-  "license": "MIT",
+  "license": "Apache-2.0",
   "type": "module",
   "sideEffects": false,
   "engines": {

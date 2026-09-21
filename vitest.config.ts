@@ -20,6 +20,7 @@ export default defineConfig({
       reporter: ['text', 'html', 'lcov'],
       include: ['src/**/*.ts'],
       exclude: ['src/**/*.{test,spec}.ts', 'src/**/*.d.ts'],
+      thresholds: { lines: 95, functions: 95, branches: 95, statements: 95 },
     },
   },
 });
